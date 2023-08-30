@@ -2,6 +2,7 @@ mlflow server --backend-store-uri mysql://mlflow:mlflow@localhost/mlflow --defau
 
 mlflow server --backend-store-uri mysql://mlflow:mlflow@localhost/mlflow --default-artifact-root file:/home/vimalp/mlruns -h <network-ip> -p 8000
 
+1. install mysql, 2. create database and grant permission. run above command.
 
 
 GRANT ALL ON *.* TO 'mlflow'@'localhost' WITH GRANT OPTION;
