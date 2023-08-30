@@ -1,0 +1,7 @@
+mlflow server --backend-store-uri mysql://mlflow:mlflow@localhost/mlflow --default-artifact-root file:/home/vimalp/mlruns -h 0.0.0.0 -p 8000
+
+mlflow server --backend-store-uri mysql://mlflow:mlflow@localhost/mlflow --default-artifact-root file:/home/vimalp/mlruns -h <network-ip> -p 8000
+
+
+
+GRANT ALL ON *.* TO 'mlflow'@'localhost' WITH GRANT OPTION;
